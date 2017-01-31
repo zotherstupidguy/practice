@@ -1,0 +1,43 @@
+* Problem
+  The prime factors of 13195 are 5, 7, 13 and 29.
+  What is the largest prime factor of the number 600851475143 ?  
+* S/Q
+** Summary
+   It is a Number Theory question. 
+   Must know how to get the prime factors of a number. 
+*** Tags
+    #primes #cryptography #numbertheory
+** Q. Are all numbers products of prime factors?
+   
+* 3R
+** Predicate
+   In number theory, the fundamental theorem of arithmetic, also called the unique factorization theorem or the unique-prime-factorization theorem, 
+   states that every integer greater than 1, either is prime itself or is the product of prime numbers, and that this product is unique, up to the order of the factors.
+   
+   
+   For example,
+   1200 = 24 Ã 31 Ã 52 = 3 Ã 2 Ã 2 Ã 2 Ã 2 Ã 5 Ã 5 = 5 Ã 2 Ã 3 Ã 2 Ã 5 Ã 2 Ã 2 = etc.
+   The theorem is stating two things: first, that 1200 can be represented as a product of primes, and second, no matter how this is done, there will always be four 2s, one 3, two 5s, and no other primes in the product.
+   The requirement that the factors be prime is necessary: factorizations containing composite numbers may not be unique (e.g. 12 = 2 Ã 6 = 3 Ã 4).
+   This theorem is one of the main reasons why 1 is not considered a prime number: if 1 were prime, the factorization would not be unique, as, for example, 2 = 2Ã1 = 2Ã1Ã1 = ...
+** Predicate
+** Implication
+** Implication
+   
+* Solution
+  #+BEGIN_SRC ruby :results list
+    def x
+      p "somthing"
+    end
+
+    1000.times do
+      p "hello org-mode"
+    end
+  #+END_SRC
+  #+RESULTS:
+  : - 1000
+  
+* TODO 
+- use latex to write  mathmatical formulas and also preview latex in org-mode by default (search for some kool configuration)
+- M-n and M-p to get history of the minibuffer.
+- undo-tree-visualize to keep track of changes

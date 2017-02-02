@@ -14,8 +14,17 @@
    In number theory, the fundamental theorem of arithmetic, also called the unique factorization theorem or the unique-prime-factorization theorem, 
    states that every integer greater than 1, either is prime itself or is the product of prime numbers, and that this product is unique, up to the order of the factors.
    
+   #+BEGIN_QUOTE
+   this is super cool ~ Mo  
+   #+END_QUOTE   
    
-   For example,
+   #+BEGIN_LaTeX
+   \begin{equation}
+   x=\sqrt{b}
+   \end{equation}   
+   #+END_LaTeX   
+   
+   For Example,
    1200 = 24 Ã 31 Ã 52 = 3 Ã 2 Ã 2 Ã 2 Ã 2 Ã 5 Ã 5 = 5 Ã 2 Ã 3 Ã 2 Ã 5 Ã 2 Ã 2 = etc.
    The theorem is stating two things: first, that 1200 can be represented as a product of primes, and second, no matter how this is done, there will always be four 2s, one 3, two 5s, and no other primes in the product.
    The requirement that the factors be prime is necessary: factorizations containing composite numbers may not be unique (e.g. 12 = 2 Ã 6 = 3 Ã 4).
@@ -28,16 +37,33 @@
   #+BEGIN_SRC ruby :results list
     def x
       p "somthing"
-    end
+    end             # => :x
 
-    1000.times do
-      p "hello org-mode"
-    end
+    10.times do           # => 10
+      p "hello org-mode"  # => "hello org-mode", "hello org-mode", "hello org-mode", "hello org-mode", "hello org-mode", "hello org-mode", "hello org-mode", "hello org-mode", "hello org-mode", "hello org-mode"
+    end                   # => 10
+
+    # >> "hello org-mode"
+    # >> "hello org-mode"
+    # >> "hello org-mode"
+    # >> "hello org-mode"
+    # >> "hello org-mode"
+    # >> "hello org-mode"
+    # >> "hello org-mode"
+    # >> "hello org-mode"
+    # >> "hello org-mode"
+    # >> "hello org-mode"
   #+END_SRC
   #+RESULTS:
   : - 1000
   
+* Refrences
+-http://howardism.org/Technical/Emacs/literate-programming-tutorial.html  
+-https://en.wikipedia.org/wiki/Disquisitiones_Arithmeticae 
+-https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic
+-https://projecteuler.net/problem=3   
 * TODO 
 - use latex to write  mathmatical formulas and also preview latex in org-mode by default (search for some kool configuration)
 - M-n and M-p to get history of the minibuffer.
 - undo-tree-visualize to keep track of changes
+- how to automatically create dirs and files from the minibuffer?
